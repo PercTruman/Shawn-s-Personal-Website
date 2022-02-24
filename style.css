@@ -1,5 +1,49 @@
 body {
-    background: aquamarine;
     margin: 0 auto;
-    color:darkmagenta;
+    font-family: 'Playfair Display', serif;
 }
+
+#container {
+    /* padding: 2rem; */
+}
+
+section {
+    
+}
+
+
+.dark {
+    background:darkslategray;
+    color: cornsilk;
+}
+
+.light {
+    background: ghostwhite;
+}
+
+h1, p{
+    margin-top: 0;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    max-width: 800px;
+}
+
+#shawnFace{
+    width:400px;
+    
+}
+
