@@ -1,30 +1,27 @@
 body {
     margin: 0 auto;
     font-family: 'Playfair Display', serif;
-}
-
-#container {
-    /* padding: 2rem; */
+    box-sizing: border-box;
 }
 
 section {
-    
-   
     
 }
 
 
 .dark {
-    background:darkslategray;
+    background:#334860;
     color: cornsilk;
 }
 
 .light {
-    background: ghostwhite;
+    background: #8DB4E0;
+    color: #334860;
+    
 }
 
 h1, p{
-    margin-top: 0;
+    margin: 0;
 }
 
 h1{
@@ -34,8 +31,10 @@ h1{
 
 h2 {
     text-align: center;
-    font-weight: bolder;
-    text-decoration: underline;
+    font-size: 2.5rem;
+    margin-top: 0;
+    padding-top: 2rem;
+    letter-spacing: 2.5px;
 }
 
 p {
@@ -45,29 +44,36 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 2em;
    
 }
 img {
-    padding: 3rem;
-}
-
-#shawnFace, #theHarts, #autumnPic, #allisynPic{
+    padding: 5rem;
     width:400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
     }
+
+#theHarts {
+    width: 800px;
+}
+
+#myKids img {
+    padding-top: 2rem;
+}
+    
 
 #kidPics {
     display:flex;
     width: 100%;
     justify-content: space-around;
 }
+
 #autumnBlock, #allisynBlock {
     display:flex;
     flex-direction: column;
 }
 
-#kidPics h2 {
-    text-decoration: none;
-}
