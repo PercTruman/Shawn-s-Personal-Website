@@ -9,6 +9,8 @@ body {
 
 section {
     
+   
+    
 }
 
 
@@ -39,11 +41,33 @@ h2 {
 p {
     letter-spacing: 2px;
     font-size: 1.25rem;
-    max-width: 800px;
+    max-width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+img {
+    padding: 3rem;
 }
 
-#shawnFace{
+#shawnFace, #theHarts, #autumnPic, #allisynPic{
     width:400px;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+#kidPics {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#autumnBlock, #allisynBlock {
+    display:flex;
+    flex-direction: column;
 }
 
+#kidPics h2 {
+    text-decoration: none;
+}
