@@ -4,11 +4,6 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    
-}
-
-
 .dark {
     background:#334860;
     color: cornsilk;
@@ -17,7 +12,6 @@ section {
 .light {
     background: #8DB4E0;
     color: #334860;
-    
 }
 
 h1, p{
@@ -46,9 +40,11 @@ p {
     margin-right: auto;
     margin-bottom: 0;
     padding-bottom: 2em;
-   
 }
-img {
+
+#theHarts, #shawnFace,
+#shilloyFace, #autumnPic,
+#allisynPic {
     padding: 5rem;
     width:400px;
     display: block;
@@ -65,7 +61,6 @@ img {
     padding-top: 2rem;
 }
     
-
 #kidPics {
     display:flex;
     width: 100%;
@@ -75,6 +70,67 @@ img {
 #autumnBlock, #allisynBlock {
     display:flex;
     flex-direction: column;
+}
+#warhammer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#discGolf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel {
+    border: 1px solid red;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 8rem;
+    }
+
+.carousel-item {
+    display:none;
+    max-width: 600px;
+}
+.carousel-item img {
+    width: 100%;
+}
+.carousel-item-visible{
+    display:block;
+}
+.carousel-actions {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+}
+button {
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#carousel-back {
+    margin-left: 1.5em;
+}
+
+#carousel-forward {
+    margin-right: 1.5em;
 }
 
 
