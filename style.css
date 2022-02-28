@@ -88,27 +88,33 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2em;
 }
 
-#carousel {
-    border: 1px solid red;
+.carousel {
     max-width: 600px;
     position: relative;
     margin: auto;
     margin-bottom: 8rem;
     }
 
-.carousel-item {
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
     display:none;
-    max-width: 600px;
 }
-.carousel-item img {
-    width: 100%;
-}
-.carousel-item-visible{
+
+.carousel .carousel-item-visible{
     display:block;
+    animation: fadeVisibility .8s;
+    }
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
-.carousel-actions {
+
+.carousel .carousel-actions {
     position: absolute;
     top: 50%;
     display: flex;
@@ -116,21 +122,32 @@ a {
     width: 100%;
     transform: translateY(-50%);
 }
-button {
-    height: 50px;
-    width: 50px;
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: white;
+    border: 0;
+    font-size: 16px;
     font-weight: bold;
-    padding: 1em;
-    border-radius: 50%;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
-#carousel-back {
+#carousel-button-prev {
     margin-left: 1.5em;
 }
 
-#carousel-forward {
+#carousel-button-next {
     margin-right: 1.5em;
 }
 
+@keyframes fadeVisibility{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
